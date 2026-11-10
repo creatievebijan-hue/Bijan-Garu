@@ -35,7 +35,7 @@ export const Navbar: React.FC<NavbarProps> = ({ lang, onSetLang, onBookClick }) 
       <div className="bg-slate-900 border-b border-slate-800 text-slate-300 text-xs py-1.5 px-4">
         <div className="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
           <div className="flex items-center gap-2">
-            <span className="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-semibold bg-amber-500/10 text-amber-300 border border-amber-500/20">
+            <span className="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-semibold bg-emerald-500/10 text-emerald-300 border border-emerald-500/20">
               {t.advisoryBadge}
             </span>
           </div>

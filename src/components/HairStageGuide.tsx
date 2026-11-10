@@ -38,7 +38,7 @@ export const HairStageGuide: React.FC<StageGuideProps> = ({ lang, onSelectStage 
               onClick={() => setActiveStage(idx)}
               className={`px-4 py-2.5 rounded-xl text-xs sm:text-sm font-semibold transition-all cursor-pointer ${
                 activeStage === idx
-                  ? 'bg-amber-400 text-slate-950 shadow-md shadow-amber-400/20 scale-105'
+                  ? 'bg-emerald-400 text-slate-950 shadow-md shadow-emerald-400/20 scale-105'
                   : 'bg-slate-900 text-slate-300 hover:bg-slate-800 border border-slate-800 hover:border-slate-700'
               }`}
             >
@@ -54,7 +54,7 @@ export const HairStageGuide: React.FC<StageGuideProps> = ({ lang, onSelectStage 
             
             <div className="md:col-span-7 space-y-4">
               <div className="flex items-center gap-2">
-                <span className="px-3 py-1 rounded-md text-xs font-bold bg-amber-400/20 text-amber-300 border border-amber-400/30">
+                <span className="px-3 py-1 rounded-md text-xs font-bold bg-emerald-400/20 text-emerald-300 border border-emerald-400/30">
                   {current.stage}
                 </span>
                 <h3 className="text-xl sm:text-2xl font-bold text-white">
@@ -67,7 +67,7 @@ export const HairStageGuide: React.FC<StageGuideProps> = ({ lang, onSelectStage 
               </p>
 
               <div className="p-4 rounded-xl bg-slate-900 border border-slate-800 space-y-2">
-                <div className="flex items-center gap-2 text-xs font-bold text-amber-400">
+                <div className="flex items-center gap-2 text-xs font-bold text-emerald-400">
                   <Info className="w-4 h-4 shrink-0" />
                   <span>{t.stageGuide.focusLabel}</span>
                 </div>
@@ -88,7 +88,7 @@ export const HairStageGuide: React.FC<StageGuideProps> = ({ lang, onSelectStage 
             </div>
 
             <div className="md:col-span-5 flex flex-col justify-center items-center p-6 bg-slate-900/80 rounded-2xl border border-slate-800 text-center space-y-4">
-              <div className="w-16 h-16 rounded-full bg-amber-400/10 border border-amber-400/30 flex items-center justify-center text-amber-400 font-extrabold text-sm sm:text-base">
+              <div className="w-16 h-16 rounded-full bg-emerald-400/10 border border-emerald-400/30 flex items-center justify-center text-emerald-400 font-extrabold text-sm sm:text-base">
                 {current.stage}
               </div>
               <div>
@@ -101,7 +101,7 @@ export const HairStageGuide: React.FC<StageGuideProps> = ({ lang, onSelectStage 
               </div>
               <button
                 onClick={() => onSelectStage(`${current.stage} - ${current.name}`)}
-                className="w-full py-3 px-4 rounded-xl bg-amber-400 hover:bg-amber-300 text-slate-950 font-bold text-xs sm:text-sm flex items-center justify-center gap-2 transition-all cursor-pointer shadow-md"
+                className="w-full py-3 px-4 rounded-xl bg-emerald-400 hover:bg-emerald-300 text-slate-950 font-bold text-xs sm:text-sm flex items-center justify-center gap-2 transition-all cursor-pointer shadow-md"
               >
                 <span>{t.stageGuide.btnLabel(current.stage)}</span>
                 <ArrowRight className="w-4 h-4" />

@@ -30,7 +30,7 @@ export const HowItWorks: React.FC<HowItWorksProps> = ({ lang, onBookClick }) => 
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-amber-400/10 text-amber-300 border border-amber-400/20 mb-4">
+          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-emerald-400/10 text-emerald-300 border border-emerald-400/20 mb-4">
             <span>{t.process.badge}</span>
           </div>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
@@ -48,21 +48,21 @@ export const HowItWorks: React.FC<HowItWorksProps> = ({ lang, onBookClick }) => 
             return (
               <div
                 key={step.number}
-                className="relative bg-slate-900/90 rounded-3xl p-6 sm:p-7 border border-slate-800 hover:border-amber-400/40 transition-all duration-300 flex flex-col justify-between group shadow-lg"
+                className="relative bg-slate-900/90 rounded-3xl p-6 sm:p-7 border border-slate-800 hover:border-emerald-400/40 transition-all duration-300 flex flex-col justify-between group shadow-lg"
               >
                 {/* Step Number Watermark */}
                 <div className="flex items-center justify-between mb-6">
-                  <span className="text-4xl font-black text-slate-800 group-hover:text-amber-400/30 transition-colors font-mono">
+                  <span className="text-4xl font-black text-slate-800 group-hover:text-emerald-400/30 transition-colors font-mono">
                     {step.number}
                   </span>
-                  <div className="w-12 h-12 rounded-2xl bg-amber-400/10 border border-amber-400/20 flex items-center justify-center text-amber-400 group-hover:scale-110 transition-transform">
+                  <div className="w-12 h-12 rounded-2xl bg-emerald-400/10 border border-emerald-400/20 flex items-center justify-center text-emerald-400 group-hover:scale-110 transition-transform">
                     <Icon className="w-6 h-6" />
                   </div>
                 </div>
 
                 {/* Content */}
                 <div className="space-y-3">
-                  <h3 className="text-lg font-bold text-white group-hover:text-amber-400 transition-colors">
+                  <h3 className="text-lg font-bold text-white group-hover:text-emerald-400 transition-colors">
                     {step.title}
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
@@ -72,7 +72,7 @@ export const HowItWorks: React.FC<HowItWorksProps> = ({ lang, onBookClick }) => 
 
                 {/* Micro Detail */}
                 <div className="mt-6 pt-4 border-t border-slate-800/80">
-                  <span className="text-[11px] font-medium text-amber-400/90">
+                  <span className="text-[11px] font-medium text-emerald-400/90">
                     ✓ {step.detail}
                   </span>
                 </div>
@@ -82,7 +82,7 @@ export const HowItWorks: React.FC<HowItWorksProps> = ({ lang, onBookClick }) => 
         </div>
 
         {/* Bottom CTA Bar */}
-        <div className="mt-14 p-6 sm:p-8 rounded-3xl bg-gradient-to-r from-slate-900 via-slate-900 to-amber-950/40 border border-amber-500/20 flex flex-col sm:flex-row items-center justify-between gap-6">
+        <div className="mt-14 p-6 sm:p-8 rounded-3xl bg-gradient-to-r from-slate-900 via-slate-900 to-emerald-950/40 border border-emerald-500/20 flex flex-col sm:flex-row items-center justify-between gap-6">
           <div className="text-center sm:text-left">
             <h4 className="text-lg font-bold text-white">
               {t.process.ctaQuestion}
@@ -100,7 +100,7 @@ export const HowItWorks: React.FC<HowItWorksProps> = ({ lang, onBookClick }) => 
             </a>
             <button
               onClick={onBookClick}
-              className="px-6 py-3 rounded-xl bg-amber-400 hover:bg-amber-300 text-slate-950 font-bold text-xs sm:text-sm flex items-center gap-2 transition-all cursor-pointer shadow-md"
+              className="px-6 py-3 rounded-xl bg-emerald-400 hover:bg-emerald-300 text-slate-950 font-bold text-xs sm:text-sm flex items-center gap-2 transition-all cursor-pointer shadow-md"
             >
               <span>{t.process.ctaButton}</span>
               <ArrowRight className="w-4 h-4" />

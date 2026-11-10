@@ -53,7 +53,7 @@ export const WhyChooseUs: React.FC<WhyChooseUsProps> = ({ lang }) => {
                 className="p-7 rounded-3xl bg-slate-950/80 border border-slate-800 hover:border-slate-700 transition-all duration-300 shadow-md group hover:-translate-y-1"
               >
                 <div className="flex items-center justify-between mb-5">
-                  <div className="w-12 h-12 rounded-2xl bg-amber-400/10 border border-amber-400/20 flex items-center justify-center text-amber-400 group-hover:scale-105 transition-transform">
+                  <div className="w-12 h-12 rounded-2xl bg-emerald-400/10 border border-emerald-400/20 flex items-center justify-center text-emerald-400 group-hover:scale-105 transition-transform">
                     <Icon className="w-6 h-6" />
                   </div>
                   <span className="text-[11px] font-semibold px-2.5 py-1 rounded-md bg-slate-900 text-slate-400 border border-slate-800">
@@ -61,7 +61,7 @@ export const WhyChooseUs: React.FC<WhyChooseUsProps> = ({ lang }) => {
                   </span>
                 </div>
 
-                <h3 className="text-lg font-bold text-white mb-2 group-hover:text-amber-400 transition-colors">
+                <h3 className="text-lg font-bold text-white mb-2 group-hover:text-emerald-400 transition-colors">
                   {b.title}
                 </h3>
                 <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">

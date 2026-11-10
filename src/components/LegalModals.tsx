@@ -28,14 +28,14 @@ export const LegalModal: React.FC<LegalModalProps> = ({ isOpen, type, lang, onCl
 
         {type === 'disclaimer' ? (
           <div className="space-y-4">
-            <div className="flex items-center gap-3 text-amber-400 pb-3 border-b border-slate-800">
+            <div className="flex items-center gap-3 text-emerald-400 pb-3 border-b border-slate-800">
               <ShieldAlert className="w-6 h-6" />
               <h3 className="text-xl font-bold text-white">{t.legalModal.disclaimerTitle}</h3>
             </div>
 
             {lang === 'bn' ? (
               <div className="space-y-3 text-sm text-slate-300 leading-relaxed">
-                <p className="font-semibold text-amber-300">
+                <p className="font-semibold text-emerald-300">
                   &quot;মনোতোষ দাদা একটি পরামর্শ ও লিড-জেনারেশন ব্র্যান্ড এবং কোনো মেডিকেল ক্লিনিক বা স্বাস্থ্যসেবা প্রদানকারী নন। চিকিৎসার উপযোগিতা, প্রক্রিয়া এবং চিকিৎসা পরামর্শ অবশ্যই যোগ্য ডাক্তারের মাধ্যমে নির্ধারিত হওয়া উচিত। ফলাফল ব্যক্তিভেদে ভিন্ন হতে পারে।&quot;
                 </p>
 
@@ -56,7 +56,7 @@ export const LegalModal: React.FC<LegalModalProps> = ({ isOpen, type, lang, onCl
               </div>
             ) : (
               <div className="space-y-3 text-sm text-slate-300 leading-relaxed">
-                <p className="font-semibold text-amber-300">
+                <p className="font-semibold text-emerald-300">
                   &quot;MONOTOSH DADA is a consultation and lead-generation brand and is not a medical clinic or medical professional. Treatment suitability, procedures and medical advice should be determined by a qualified medical professional. Results may vary.&quot;
                 </p>
 

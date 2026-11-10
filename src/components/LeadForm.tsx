@@ -120,7 +120,7 @@ export const LeadForm: React.FC<LeadFormProps> = ({
         
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-12">
-          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-amber-400/10 text-amber-300 border border-amber-400/20 mb-3">
+          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-emerald-400/10 text-emerald-300 border border-emerald-400/20 mb-3">
             <Sparkles className="w-3.5 h-3.5" />
             <span>{t.form.badge}</span>
           </div>
@@ -164,7 +164,7 @@ export const LeadForm: React.FC<LeadFormProps> = ({
                 <div className="grid sm:grid-cols-2 gap-2">
                   <a
                     href="tel:7980248170"
-                    className="py-2.5 px-3 rounded-xl bg-amber-400 text-slate-950 font-bold text-xs flex items-center justify-center gap-2 hover:bg-amber-300 transition-colors shadow-sm"
+                    className="py-2.5 px-3 rounded-xl bg-emerald-400 text-slate-950 font-bold text-xs flex items-center justify-center gap-2 hover:bg-emerald-300 transition-colors shadow-sm"
                   >
                     <Phone className="w-4 h-4" />
                     7980248170
@@ -203,7 +203,7 @@ export const LeadForm: React.FC<LeadFormProps> = ({
                   <Shield className="w-4 h-4 text-emerald-400" />
                   <span>{t.form.confidentialNotice}</span>
                 </div>
-                <div className="text-xs text-amber-400 font-semibold">
+                <div className="text-xs text-emerald-400 font-semibold">
                   {t.form.helplineText}
                 </div>
               </div>
@@ -213,7 +213,7 @@ export const LeadForm: React.FC<LeadFormProps> = ({
                 {/* Full Name */}
                 <div className="space-y-2">
                   <label htmlFor="fullName" className="block text-xs font-semibold text-slate-300">
-                    {t.form.fullNameLabel} <span className="text-amber-400">*</span>
+                    {t.form.fullNameLabel} <span className="text-emerald-400">*</span>
                   </label>
                   <div className="relative">
                     <input
@@ -228,7 +228,7 @@ export const LeadForm: React.FC<LeadFormProps> = ({
                       className={`w-full px-4 py-3 rounded-xl bg-slate-950 border text-sm text-white placeholder-slate-500 focus:outline-none transition-colors ${
                         errors.fullName
                           ? 'border-rose-500 focus:border-rose-500'
-                          : 'border-slate-800 focus:border-amber-400'
+                          : 'border-slate-800 focus:border-emerald-400'
                       }`}
                     />
                   </div>
@@ -243,7 +243,7 @@ export const LeadForm: React.FC<LeadFormProps> = ({
                 {/* Phone Number */}
                 <div className="space-y-2">
                   <label htmlFor="phoneNumber" className="block text-xs font-semibold text-slate-300">
-                    {t.form.phoneLabel} <span className="text-amber-400">*</span>
+                    {t.form.phoneLabel} <span className="text-emerald-400">*</span>
                   </label>
                   <div className="relative">
                     <input
@@ -258,7 +258,7 @@ export const LeadForm: React.FC<LeadFormProps> = ({
                       className={`w-full px-4 py-3 rounded-xl bg-slate-950 border text-sm text-white placeholder-slate-500 focus:outline-none transition-colors ${
                         errors.phoneNumber
                           ? 'border-rose-500 focus:border-rose-500'
-                          : 'border-slate-800 focus:border-amber-400'
+                          : 'border-slate-800 focus:border-emerald-400'
                       }`}
                     />
                   </div>
@@ -275,7 +275,7 @@ export const LeadForm: React.FC<LeadFormProps> = ({
               {/* Preferred Contact Method */}
               <div className="space-y-2">
                 <label className="block text-xs font-semibold text-slate-300">
-                  {t.form.preferredMethodLabel} <span className="text-amber-400">*</span>
+                  {t.form.preferredMethodLabel} <span className="text-emerald-400">*</span>
                 </label>
                 <div className="grid grid-cols-3 gap-3">
                   {t.form.methods.map((method) => (
@@ -285,7 +285,7 @@ export const LeadForm: React.FC<LeadFormProps> = ({
                       onClick={() => setFormData({ ...formData, contactMethod: method })}
                       className={`py-3 px-3 rounded-xl text-xs sm:text-sm font-semibold transition-all border cursor-pointer ${
                         formData.contactMethod === method
-                          ? 'bg-amber-400 text-slate-950 border-amber-400 shadow-sm'
+                          ? 'bg-emerald-400 text-slate-950 border-emerald-400 shadow-sm'
                           : 'bg-slate-950 text-slate-300 border-slate-800 hover:border-slate-700'
                       }`}
                     >
@@ -299,10 +299,10 @@ export const LeadForm: React.FC<LeadFormProps> = ({
               <div className="space-y-2">
                 <div className="flex items-center justify-between">
                   <label htmlFor="hairConcern" className="block text-xs font-semibold text-slate-300">
-                    {t.form.concernLabel} <span className="text-amber-400">*</span>
+                    {t.form.concernLabel} <span className="text-emerald-400">*</span>
                   </label>
                   {preselectedService && (
-                    <span className="text-[11px] text-amber-400 font-medium">
+                    <span className="text-[11px] text-emerald-400 font-medium">
                       {lang === 'bn' ? 'বাছাইকৃত সেবা' : 'Selected from section'}
                     </span>
                   )}
@@ -311,7 +311,7 @@ export const LeadForm: React.FC<LeadFormProps> = ({
                   id="hairConcern"
                   value={formData.hairConcern}
                   onChange={(e) => setFormData({ ...formData, hairConcern: e.target.value })}
-                  className="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-sm text-white focus:outline-none focus:border-amber-400 transition-colors"
+                  className="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-sm text-white focus:outline-none focus:border-emerald-400 transition-colors"
                 >
                   {t.form.concernOptions.map((item) => (
                     <option key={item} value={item} className="bg-slate-900 text-white">
@@ -332,7 +332,7 @@ export const LeadForm: React.FC<LeadFormProps> = ({
                   placeholder={t.form.messagePlaceholder}
                   value={formData.message}
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                  className="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-amber-400 transition-colors"
+                  className="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-emerald-400 transition-colors"
                 />
               </div>
 
@@ -388,7 +388,7 @@ export const LeadForm: React.FC<LeadFormProps> = ({
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full py-4 rounded-xl text-base font-bold text-slate-950 bg-amber-400 hover:bg-amber-300 active:scale-[0.99] disabled:opacity-70 transition-all flex items-center justify-center gap-2 cursor-pointer shadow-lg shadow-amber-500/20"
+                className="w-full py-4 rounded-xl text-base font-bold text-slate-950 bg-emerald-400 hover:bg-emerald-300 active:scale-[0.99] disabled:opacity-70 transition-all flex items-center justify-center gap-2 cursor-pointer shadow-lg shadow-emerald-500/20"
               >
                 {isSubmitting ? (
                   <>
@@ -402,6 +402,7 @@ export const LeadForm: React.FC<LeadFormProps> = ({
                   </>
                 )}
               </button>
+
 
             </form>
           )}

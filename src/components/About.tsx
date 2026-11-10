@@ -16,18 +16,18 @@ export const About: React.FC<AboutProps> = ({ lang, onBookClick }) => {
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-amber-400/10 text-amber-300 border border-amber-400/20 mb-4">
+          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-emerald-400/10 text-emerald-300 border border-emerald-400/20 mb-4">
             <Compass className="w-3.5 h-3.5" />
             <span>{t.about.badge}</span>
           </div>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
             {lang === 'bn' ? (
               <>
-                <span className="text-amber-400">{t.brandNameBangla}</span> সম্পর্কে
+                <span className="text-emerald-400">{t.brandNameBangla}</span> সম্পর্কে
               </>
             ) : (
               <>
-                About <span className="text-amber-400">{t.brandName}</span>
+                About <span className="text-emerald-400">{t.brandName}</span>
               </>
             )}
           </h2>
@@ -51,9 +51,9 @@ export const About: React.FC<AboutProps> = ({ lang, onBookClick }) => {
             </div>
 
             {/* Clear Role Transparency Box */}
-            <div className="p-5 rounded-2xl bg-amber-950/20 border border-amber-500/30 text-slate-200 space-y-2">
-              <div className="flex items-center gap-2 text-amber-300 font-bold text-sm sm:text-base">
-                <AlertOctagon className="w-5 h-5 shrink-0 text-amber-400" />
+            <div className="p-5 rounded-2xl bg-emerald-950/20 border border-emerald-500/30 text-slate-200 space-y-2">
+              <div className="flex items-center gap-2 text-emerald-300 font-bold text-sm sm:text-base">
+                <AlertOctagon className="w-5 h-5 shrink-0 text-emerald-400" />
                 <span>{t.about.transparencyTitle}</span>
               </div>
               <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
@@ -64,8 +64,8 @@ export const About: React.FC<AboutProps> = ({ lang, onBookClick }) => {
             {/* What We Do vs What Doctors Do */}
             <div className="grid sm:grid-cols-2 gap-4 pt-2">
               <div className="p-4 rounded-xl bg-slate-950/80 border border-slate-800">
-                <h4 className="text-sm font-bold text-amber-400 mb-2 flex items-center gap-2">
-                  <CheckCircle2 className="w-4 h-4 text-amber-400" />
+                <h4 className="text-sm font-bold text-emerald-400 mb-2 flex items-center gap-2">
+                  <CheckCircle2 className="w-4 h-4 text-emerald-400" />
                   {t.about.whatWeDoTitle}
                 </h4>
                 <ul className="text-xs text-slate-300 space-y-1.5 list-disc list-inside">
@@ -92,7 +92,7 @@ export const About: React.FC<AboutProps> = ({ lang, onBookClick }) => {
             <div className="pt-2 flex flex-wrap gap-4 items-center">
               <button
                 onClick={onBookClick}
-                className="px-6 py-3 rounded-xl bg-amber-400 hover:bg-amber-300 text-slate-950 font-bold text-sm flex items-center gap-2 transition-colors cursor-pointer"
+                className="px-6 py-3 rounded-xl bg-emerald-400 hover:bg-emerald-300 text-slate-950 font-bold text-sm flex items-center gap-2 transition-colors cursor-pointer"
               >
                 <span>{t.about.btnConsultation}</span>
                 <ArrowRight className="w-4 h-4" />
@@ -102,7 +102,7 @@ export const About: React.FC<AboutProps> = ({ lang, onBookClick }) => {
                 href="tel:7980248170"
                 className="px-6 py-3 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 font-semibold text-sm flex items-center gap-2 transition-colors border border-slate-700"
               >
-                <Phone className="w-4 h-4 text-amber-400" />
+                <Phone className="w-4 h-4 text-emerald-400" />
                 <span>{t.about.btnCall}</span>
               </a>
             </div>
@@ -113,7 +113,7 @@ export const About: React.FC<AboutProps> = ({ lang, onBookClick }) => {
           <div className="lg:col-span-5 space-y-4">
             
             <div className="p-6 rounded-2xl bg-slate-950/80 border border-slate-800 shadow-md">
-              <div className="w-10 h-10 rounded-xl bg-amber-400/10 flex items-center justify-center text-amber-400 mb-4">
+              <div className="w-10 h-10 rounded-xl bg-emerald-400/10 flex items-center justify-center text-emerald-400 mb-4">
                 <HelpCircle className="w-5 h-5" />
               </div>
               <h3 className="text-base font-bold text-white mb-2">{t.about.card1Title}</h3>

@@ -33,7 +33,7 @@ export const Footer: React.FC<FooterProps> = ({
           {/* Brand Info */}
           <div className="lg:col-span-5 space-y-4">
             <div className="flex items-center gap-3">
-              <div className="w-12 h-12 rounded-xl bg-slate-950 p-0.5 shadow-md shadow-amber-500/20 flex items-center justify-center overflow-hidden">
+              <div className="w-12 h-12 rounded-xl bg-slate-950 p-0.5 shadow-md shadow-emerald-500/20 flex items-center justify-center overflow-hidden">
                 <img
                   src="/assets/aistudio/LOGO_b6cc7bfa.JPG"
                   alt="MONOTOSH DADA Logo"
@@ -46,7 +46,7 @@ export const Footer: React.FC<FooterProps> = ({
                     {t.brandName}
                   </h3>
                   {lang === 'bn' && (
-                    <span className="text-xs px-1.5 py-0.5 rounded bg-slate-800 text-amber-300 font-semibold border border-slate-700">
+                    <span className="text-xs px-1.5 py-0.5 rounded bg-slate-800 text-emerald-300 font-semibold border border-slate-700">
                       মনোতোষ দাদা
                     </span>
                   )}
@@ -67,9 +67,9 @@ export const Footer: React.FC<FooterProps> = ({
               </div>
               <a
                 href="tel:7980248170"
-                className="inline-flex items-center gap-2 text-2xl font-black text-amber-400 hover:text-amber-300 transition-colors"
+                className="inline-flex items-center gap-2 text-2xl font-black text-emerald-400 hover:text-emerald-300 transition-colors"
               >
-                <Phone className="w-5 h-5 text-amber-400" />
+                <Phone className="w-5 h-5 text-emerald-400" />
                 <span>7980248170</span>
               </a>
             </div>
@@ -82,7 +82,7 @@ export const Footer: React.FC<FooterProps> = ({
                   type="button"
                   onClick={() => onSetLang('bn')}
                   className={`px-2.5 py-1 rounded text-xs font-bold transition-colors cursor-pointer ${
-                    lang === 'bn' ? 'bg-amber-400 text-slate-950' : 'text-slate-400 hover:text-white'
+                    lang === 'bn' ? 'bg-emerald-400 text-slate-950' : 'text-slate-400 hover:text-white'
                   }`}
                 >
                   বাংলা
@@ -91,7 +91,7 @@ export const Footer: React.FC<FooterProps> = ({
                   type="button"
                   onClick={() => onSetLang('en')}
                   className={`px-2.5 py-1 rounded text-xs font-bold transition-colors cursor-pointer ${
-                    lang === 'en' ? 'bg-amber-400 text-slate-950' : 'text-slate-400 hover:text-white'
+                    lang === 'en' ? 'bg-emerald-400 text-slate-950' : 'text-slate-400 hover:text-white'
                   }`}
                 >
                   English
@@ -107,32 +107,32 @@ export const Footer: React.FC<FooterProps> = ({
             </h4>
             <ul className="space-y-2.5 text-sm">
               <li>
-                <a href="#home" className="hover:text-amber-400 transition-colors">
+                <a href="#home" className="hover:text-emerald-400 transition-colors">
                   {t.nav.home}
                 </a>
               </li>
               <li>
-                <a href="#about" className="hover:text-amber-400 transition-colors">
+                <a href="#about" className="hover:text-emerald-400 transition-colors">
                   {t.nav.about}
                 </a>
               </li>
               <li>
-                <a href="#services" className="hover:text-amber-400 transition-colors">
+                <a href="#services" className="hover:text-emerald-400 transition-colors">
                   {t.nav.services}
                 </a>
               </li>
               <li>
-                <a href="#process" className="hover:text-amber-400 transition-colors">
+                <a href="#process" className="hover:text-emerald-400 transition-colors">
                   {t.nav.process}
                 </a>
               </li>
               <li>
-                <a href="#faq" className="hover:text-amber-400 transition-colors">
+                <a href="#faq" className="hover:text-emerald-400 transition-colors">
                   {t.nav.faq}
                 </a>
               </li>
               <li>
-                <a href="#contact" className="hover:text-amber-400 transition-colors">
+                <a href="#contact" className="hover:text-emerald-400 transition-colors">
                   {t.nav.contact}
                 </a>
               </li>
@@ -148,7 +148,7 @@ export const Footer: React.FC<FooterProps> = ({
               <li>
                 <button
                   onClick={onOpenPrivacy}
-                  className="hover:text-amber-400 transition-colors cursor-pointer text-left"
+                  className="hover:text-emerald-400 transition-colors cursor-pointer text-left"
                 >
                   {t.footer.privacy}
                 </button>
@@ -156,7 +156,7 @@ export const Footer: React.FC<FooterProps> = ({
               <li>
                 <button
                   onClick={onOpenDisclaimer}
-                  className="hover:text-amber-400 transition-colors cursor-pointer text-left"
+                  className="hover:text-emerald-400 transition-colors cursor-pointer text-left"
                 >
                   {t.footer.disclaimer}
                 </button>
@@ -164,7 +164,7 @@ export const Footer: React.FC<FooterProps> = ({
               <li>
                 <button
                   onClick={onBookClick}
-                  className="text-amber-400 hover:underline cursor-pointer font-medium"
+                  className="text-emerald-400 hover:underline cursor-pointer font-medium"
                 >
                   {t.footer.requestCta}
                 </button>
@@ -202,8 +202,8 @@ export const Footer: React.FC<FooterProps> = ({
 
       {/* Prominent Medical Disclaimer Box */}
       <div className="border-t border-slate-800/80 bg-slate-950/60 py-8 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-5xl mx-auto rounded-2xl bg-slate-900/90 border border-amber-500/20 p-5 sm:p-6 text-center space-y-2">
-          <div className="inline-flex items-center gap-2 text-amber-400 text-xs font-bold uppercase tracking-wider">
+        <div className="max-w-5xl mx-auto rounded-2xl bg-slate-900/90 border border-emerald-500/20 p-5 sm:p-6 text-center space-y-2">
+          <div className="inline-flex items-center gap-2 text-emerald-400 text-xs font-bold uppercase tracking-wider">
             <AlertCircle className="w-4 h-4" />
             <span>{t.footer.mandatoryDisclaimerBadge}</span>
           </div>
@@ -234,7 +234,7 @@ export const Footer: React.FC<FooterProps> = ({
             <span>•</span>
             <button
               onClick={scrollToTop}
-              className="flex items-center gap-1 text-slate-400 hover:text-amber-400 transition-colors cursor-pointer"
+              className="flex items-center gap-1 text-slate-400 hover:text-emerald-400 transition-colors cursor-pointer"
             >
               <span>{t.footer.backToTop}</span>
               <ArrowUp className="w-3.5 h-3.5" />

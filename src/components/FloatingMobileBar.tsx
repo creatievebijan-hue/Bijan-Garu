@@ -16,7 +16,7 @@ export const FloatingMobileBar: React.FC<FloatingMobileBarProps> = ({ lang, onBo
         {/* Call Now */}
         <a
           href="tel:7980248170"
-          className="flex flex-col items-center justify-center py-2 px-1 rounded-xl bg-amber-400 text-slate-950 font-bold text-[11px] shadow-sm active:scale-95 transition-all"
+          className="flex flex-col items-center justify-center py-2 px-1 rounded-xl bg-emerald-400 text-slate-950 font-bold text-[11px] shadow-sm active:scale-95 transition-all"
         >
           <Phone className="w-4 h-4 mb-0.5 animate-bounce" />
           <span>{t.callNow}</span>
@@ -38,7 +38,7 @@ export const FloatingMobileBar: React.FC<FloatingMobileBarProps> = ({ lang, onBo
           onClick={onBookClick}
           className="flex flex-col items-center justify-center py-2 px-1 rounded-xl bg-slate-900 border border-slate-700 text-slate-200 font-bold text-[11px] shadow-sm active:scale-95 transition-all cursor-pointer"
         >
-          <Calendar className="w-4 h-4 mb-0.5 text-amber-400" />
+          <Calendar className="w-4 h-4 mb-0.5 text-emerald-400" />
           <span>{lang === 'bn' ? 'পরামর্শ' : 'Consult'}</span>
         </button>
       </div>

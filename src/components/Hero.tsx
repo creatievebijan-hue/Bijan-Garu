@@ -20,7 +20,7 @@ export const Hero: React.FC<HeroProps> = ({ lang, onBookClick }) => {
   return (
     <section id="home" className="relative overflow-hidden bg-slate-950 text-white pt-10 pb-16 lg:pt-16 lg:pb-24 border-b border-slate-800">
       {/* Background Glow Accents */}
-      <div className="absolute top-0 left-1/4 w-96 h-96 bg-amber-500/10 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute top-0 left-1/4 w-96 h-96 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute top-1/3 right-10 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute -bottom-10 left-1/2 -translate-x-1/2 w-full max-w-5xl h-48 bg-slate-900/40 rounded-full blur-2xl pointer-events-none" />
 
@@ -31,7 +31,7 @@ export const Hero: React.FC<HeroProps> = ({ lang, onBookClick }) => {
           <div className="lg:col-span-7 space-y-6 text-center lg:text-left">
             
             {/* Status Pill Badge */}
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-900/90 border border-amber-500/30 text-amber-300 text-xs font-semibold shadow-inner">
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-900/90 border border-emerald-500/30 text-emerald-300 text-xs font-semibold shadow-inner">
               <span className="w-2 h-2 rounded-full bg-emerald-400 animate-ping" />
               <span>{t.hero.badge}</span>
             </div>
@@ -39,7 +39,7 @@ export const Hero: React.FC<HeroProps> = ({ lang, onBookClick }) => {
             {/* Main Headline */}
             <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-[1.2]">
               {t.hero.titleStart}
-              <span className="bg-gradient-to-r from-amber-300 via-amber-400 to-amber-500 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-emerald-300 via-emerald-400 to-emerald-500 bg-clip-text text-transparent">
                 {t.hero.titleHighlight}
               </span>
               {t.hero.titleEnd}
@@ -52,7 +52,7 @@ export const Hero: React.FC<HeroProps> = ({ lang, onBookClick }) => {
 
             {/* Transparent Role Note */}
             <div className="p-3.5 rounded-xl bg-slate-900/70 border border-slate-800 text-slate-400 text-xs sm:text-sm flex items-start gap-2.5 max-w-xl mx-auto lg:mx-0 text-left">
-              <AlertCircle className="w-5 h-5 text-amber-400 shrink-0 mt-0.5" />
+              <AlertCircle className="w-5 h-5 text-emerald-400 shrink-0 mt-0.5" />
               <div>
                 <strong className="text-slate-200">{t.hero.roleNoticeTitle}</strong>{' '}
                 {t.hero.roleNoticeText}
@@ -64,7 +64,7 @@ export const Hero: React.FC<HeroProps> = ({ lang, onBookClick }) => {
               {/* Primary CTA */}
               <button
                 onClick={onBookClick}
-                className="w-full sm:w-auto px-8 py-4 rounded-xl text-base font-bold text-slate-950 bg-gradient-to-r from-amber-400 via-amber-300 to-amber-500 hover:from-amber-300 hover:to-amber-400 shadow-xl shadow-amber-500/20 active:scale-95 transition-all flex items-center justify-center gap-2 group cursor-pointer"
+                className="w-full sm:w-auto px-8 py-4 rounded-xl text-base font-bold text-slate-950 bg-gradient-to-r from-emerald-400 via-emerald-300 to-emerald-500 hover:from-emerald-300 hover:to-emerald-400 shadow-xl shadow-emerald-500/20 active:scale-95 transition-all flex items-center justify-center gap-2 group cursor-pointer"
               >
                 <Calendar className="w-5 h-5 text-slate-950" />
                 <span>{t.bookConsultation}</span>
@@ -74,9 +74,9 @@ export const Hero: React.FC<HeroProps> = ({ lang, onBookClick }) => {
               {/* Secondary CTA */}
               <a
                 href="tel:7980248170"
-                className="w-full sm:w-auto px-7 py-4 rounded-xl text-base font-bold text-white bg-slate-900 hover:bg-slate-800 border border-slate-700 hover:border-amber-400/50 shadow-md active:scale-95 transition-all flex items-center justify-center gap-2"
+                className="w-full sm:w-auto px-7 py-4 rounded-xl text-base font-bold text-white bg-slate-900 hover:bg-slate-800 border border-slate-700 hover:border-emerald-400/50 shadow-md active:scale-95 transition-all flex items-center justify-center gap-2"
               >
-                <Phone className="w-5 h-5 text-amber-400" />
+                <Phone className="w-5 h-5 text-emerald-400" />
                 <span>{t.callNow}</span>
               </a>
             </div>
@@ -88,7 +88,7 @@ export const Hero: React.FC<HeroProps> = ({ lang, onBookClick }) => {
               </span>
               <a
                 href="tel:7980248170"
-                className="text-2xl sm:text-3xl font-extrabold tracking-tight text-amber-400 hover:text-amber-300 transition-colors"
+                className="text-2xl sm:text-3xl font-extrabold tracking-tight text-emerald-400 hover:text-emerald-300 transition-colors"
               >
                 7980248170
               </a>
@@ -138,13 +138,13 @@ export const Hero: React.FC<HeroProps> = ({ lang, onBookClick }) => {
               {/* Card Header */}
               <div className="flex items-center justify-between pb-5 border-b border-slate-800/80">
                 <div>
-                  <span className="text-[11px] font-bold tracking-wider uppercase text-amber-400">
+                  <span className="text-[11px] font-bold tracking-wider uppercase text-emerald-400">
                     {t.hero.cardTag}
                   </span>
                   <h3 className="text-lg font-bold text-white">{t.hero.cardTitle}</h3>
                 </div>
-                <div className="w-10 h-10 rounded-xl bg-amber-400/10 border border-amber-400/20 flex items-center justify-center">
-                  <Sparkles className="w-5 h-5 text-amber-400" />
+                <div className="w-10 h-10 rounded-xl bg-emerald-400/10 border border-emerald-400/20 flex items-center justify-center">
+                  <Sparkles className="w-5 h-5 text-emerald-400" />
                 </div>
               </div>
 
@@ -154,7 +154,7 @@ export const Hero: React.FC<HeroProps> = ({ lang, onBookClick }) => {
                 <div className="p-3.5 rounded-xl bg-slate-900/90 border border-slate-800 hover:border-slate-700 transition-colors">
                   <div className="flex items-center justify-between text-xs mb-1">
                     <span className="font-semibold text-slate-200">{t.hero.step1Title}</span>
-                    <span className="text-amber-400 font-bold">{lang === 'bn' ? 'ধাপ ১' : 'Step 1'}</span>
+                    <span className="text-emerald-400 font-bold">{lang === 'bn' ? 'ধাপ ১' : 'Step 1'}</span>
                   </div>
                   <p className="text-xs text-slate-400 leading-relaxed">
                     {t.hero.step1Desc}
@@ -164,7 +164,7 @@ export const Hero: React.FC<HeroProps> = ({ lang, onBookClick }) => {
                 <div className="p-3.5 rounded-xl bg-slate-900/90 border border-slate-800 hover:border-slate-700 transition-colors">
                   <div className="flex items-center justify-between text-xs mb-1">
                     <span className="font-semibold text-slate-200">{t.hero.step2Title}</span>
-                    <span className="text-amber-400 font-bold">{lang === 'bn' ? 'ধাপ ২' : 'Step 2'}</span>
+                    <span className="text-emerald-400 font-bold">{lang === 'bn' ? 'ধাপ ২' : 'Step 2'}</span>
                   </div>
                   <p className="text-xs text-slate-400 leading-relaxed">
                     {t.hero.step2Desc}
@@ -174,7 +174,7 @@ export const Hero: React.FC<HeroProps> = ({ lang, onBookClick }) => {
                 <div className="p-3.5 rounded-xl bg-slate-900/90 border border-slate-800 hover:border-slate-700 transition-colors">
                   <div className="flex items-center justify-between text-xs mb-1">
                     <span className="font-semibold text-slate-200">{t.hero.step3Title}</span>
-                    <span className="text-amber-400 font-bold">{lang === 'bn' ? 'ধাপ ৩' : 'Step 3'}</span>
+                    <span className="text-emerald-400 font-bold">{lang === 'bn' ? 'ধাপ ৩' : 'Step 3'}</span>
                   </div>
                   <p className="text-xs text-slate-400 leading-relaxed">
                     {t.hero.step3Desc}
@@ -184,14 +184,14 @@ export const Hero: React.FC<HeroProps> = ({ lang, onBookClick }) => {
               </div>
 
               {/* Live Status Widget */}
-              <div className="mt-2 p-4 rounded-2xl bg-gradient-to-r from-amber-950/40 via-slate-900 to-emerald-950/40 border border-amber-500/20 flex items-center justify-between">
+              <div className="mt-2 p-4 rounded-2xl bg-gradient-to-r from-emerald-950/40 via-slate-900 to-emerald-950/40 border border-emerald-500/20 flex items-center justify-between">
                 <div>
                   <div className="text-xs font-semibold text-white">{t.hero.widgetTitle}</div>
                   <div className="text-[11px] text-slate-400">{t.hero.widgetSubtitle}</div>
                 </div>
                 <a
                   href="tel:7980248170"
-                  className="px-3.5 py-1.5 rounded-lg bg-amber-400 hover:bg-amber-300 text-slate-950 font-bold text-xs flex items-center gap-1 transition-colors"
+                  className="px-3.5 py-1.5 rounded-lg bg-emerald-400 hover:bg-emerald-300 text-slate-950 font-bold text-xs flex items-center gap-1 transition-colors"
                 >
                   <Phone className="w-3.5 h-3.5" />
                   <span>{t.hero.widgetCall}</span>

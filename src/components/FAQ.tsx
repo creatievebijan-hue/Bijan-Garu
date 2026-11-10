@@ -21,8 +21,8 @@ export const FAQ: React.FC<FAQProps> = ({ lang, onBookClick }) => {
         
         {/* Section Header */}
         <div className="text-center mb-14">
-          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-amber-400/10 text-amber-300 border border-amber-400/20 mb-4">
-            <HelpCircle className="w-3.5 h-3.5 text-amber-400" />
+          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-emerald-400/10 text-emerald-300 border border-emerald-400/20 mb-4">
+            <HelpCircle className="w-3.5 h-3.5 text-emerald-400" />
             <span>{t.faq.badge}</span>
           </div>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
@@ -42,7 +42,7 @@ export const FAQ: React.FC<FAQProps> = ({ lang, onBookClick }) => {
                 key={faq.question}
                 className={`rounded-2xl transition-all duration-200 border ${
                   isOpen
-                    ? 'bg-slate-950 border-amber-500/40 shadow-lg'
+                    ? 'bg-slate-950 border-emerald-500/40 shadow-lg'
                     : 'bg-slate-900/80 hover:bg-slate-900 border-slate-800'
                 }`}
               >
@@ -52,14 +52,14 @@ export const FAQ: React.FC<FAQProps> = ({ lang, onBookClick }) => {
                   aria-expanded={isOpen}
                 >
                   <span className="text-base sm:text-lg font-bold text-white flex items-center gap-3">
-                    <span className="text-xs font-mono px-2 py-0.5 rounded bg-slate-800 text-amber-400 border border-slate-700">
+                    <span className="text-xs font-mono px-2 py-0.5 rounded bg-slate-800 text-emerald-400 border border-slate-700">
                       Q{index + 1}
                     </span>
                     {faq.question}
                   </span>
                   <div
                     className={`w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center shrink-0 text-slate-300 transition-transform duration-200 ${
-                      isOpen ? 'rotate-180 bg-amber-400 text-slate-950' : ''
+                      isOpen ? 'rotate-180 bg-emerald-400 text-slate-950' : ''
                     }`}
                   >
                     <ChevronDown className="w-4 h-4" />
@@ -78,7 +78,7 @@ export const FAQ: React.FC<FAQProps> = ({ lang, onBookClick }) => {
 
         {/* Still Have Questions Box */}
         <div className="mt-12 p-6 sm:p-8 rounded-3xl bg-slate-950 border border-slate-800 text-center space-y-4">
-          <div className="flex items-center justify-center gap-2 text-amber-400 text-xs font-bold uppercase tracking-wider">
+          <div className="flex items-center justify-center gap-2 text-emerald-400 text-xs font-bold uppercase tracking-wider">
             <AlertCircle className="w-4 h-4" />
             <span>{t.faq.boxTag}</span>
           </div>
@@ -91,7 +91,7 @@ export const FAQ: React.FC<FAQProps> = ({ lang, onBookClick }) => {
           <div className="flex flex-wrap items-center justify-center gap-3 pt-2">
             <a
               href="tel:7980248170"
-              className="px-5 py-2.5 rounded-xl bg-amber-400 hover:bg-amber-300 text-slate-950 font-bold text-xs sm:text-sm flex items-center gap-2 shadow-md transition-colors"
+              className="px-5 py-2.5 rounded-xl bg-emerald-400 hover:bg-emerald-300 text-slate-950 font-bold text-xs sm:text-sm flex items-center gap-2 shadow-md transition-colors"
             >
               <Phone className="w-4 h-4" />
               <span>{t.callNow}: 7980248170</span>
@@ -113,6 +113,7 @@ export const FAQ: React.FC<FAQProps> = ({ lang, onBookClick }) => {
             </button>
           </div>
         </div>
+
 
       </div>
     </section>

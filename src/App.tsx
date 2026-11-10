@@ -53,7 +53,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-slate-950 text-slate-100 flex flex-col selection:bg-amber-400 selection:text-slate-950 pb-16 sm:pb-0">
+    <div className="min-h-screen bg-slate-950 text-slate-100 flex flex-col selection:bg-emerald-400 selection:text-slate-950 pb-16 sm:pb-0">
       
       {/* Sticky Navigation Header with Language Toggle */}
       <Navbar
