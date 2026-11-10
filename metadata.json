@@ -1,0 +1,8 @@
+{
+  "name": "MONOTOSH DADA - Hair Transplant Consultation",
+  "description": "MONOTOSH DADA provides Hair Transplant consultation and Hair Restoration assistance. Contact 7980248170 to explore your options.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
